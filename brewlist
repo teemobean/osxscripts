@@ -1,0 +1,8 @@
+brew install macvim
+brew install go
+brew cask install atom
+brew cask install ngrok
+brew install carthage
+
+For node, don't use brew
+Use nvm https://github.com/creationix/nvm
