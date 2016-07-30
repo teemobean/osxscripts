@@ -9,3 +9,9 @@ brew cask install dockertoolbox
 
 For node, don't use brew
 Use nvm https://github.com/creationix/nvm
+
+For Atom, these are the packages I use
+ex-mode
+language-swift
+vim-mode
+vim-mode-visual-block
