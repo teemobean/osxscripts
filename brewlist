@@ -15,3 +15,7 @@ ex-mode
 language-swift
 vim-mode
 vim-mode-visual-block
+
+minimap
+activate-power-mode
+file-icons
