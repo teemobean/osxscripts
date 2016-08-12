@@ -6,6 +6,7 @@ brew install carthage
 brew cask install atom
 brew cask install ngrok // ngrok sets up URIs that point to your machine. Used for Slack testing.
 brew cask install dockertoolbox
+brew cask install google-chrome
 
 For node, don't use brew
 Use nvm https://github.com/creationix/nvm
