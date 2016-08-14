@@ -8,8 +8,16 @@ brew cask install ngrok // ngrok sets up URIs that point to your machine. Used f
 brew cask install dockertoolbox
 brew cask install google-chrome
 
+#############################################################
+Node
+#############################################################
+
 For node, don't use brew
 Use nvm https://github.com/creationix/nvm
+
+#############################################################
+Atom
+#############################################################
 
 For Atom, these are the packages I use
 ex-mode
@@ -20,3 +28,9 @@ vim-mode-visual-block
 minimap
 activate-power-mode
 file-icons
+
+#############################################################
+Python
+#############################################################
+
+brew install python

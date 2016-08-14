@@ -1,5 +1,5 @@
 # paths
-export PATH=$PATH:~/Documents/src/osxscripts.git/scripts
+export PATH=/usr/local/bin:$PATH:~/Documents/src/osxscripts.git/scripts
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
 
 # aliases
