@@ -2,6 +2,12 @@
 export PATH=/usr/local/bin:$PATH:~/Documents/src/osxscripts.git/scripts
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
 
+# Python stuff
+export PIP_REQUIRE_VIRTUALENV=true
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
+
 # aliases
 alias u="cd .."
 alias l="ls -lG"

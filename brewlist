@@ -1,12 +1,25 @@
 brew install fish // i did not do this, so this is an experiment
 brew install macvim
-brew install go
 brew install carthage
 
-brew cask install atom
 brew cask install ngrok // ngrok sets up URIs that point to your machine. Used for Slack testing.
 brew cask install dockertoolbox
 brew cask install google-chrome
+
+#############################################################
+Atom
+#############################################################
+
+1. brew cask install atom
+
+For Atom, these are the packages I use
+- ex-mode
+- language-swift
+- vim-mode
+- vim-mode-visual-block
+- minimap
+- activate-power-mode
+- file-icons
 
 #############################################################
 Node
@@ -16,21 +29,20 @@ For node, don't use brew
 Use nvm https://github.com/creationix/nvm
 
 #############################################################
-Atom
-#############################################################
-
-For Atom, these are the packages I use
-ex-mode
-language-swift
-vim-mode
-vim-mode-visual-block
-
-minimap
-activate-power-mode
-file-icons
-
-#############################################################
 Python
 #############################################################
 
-brew install python
+1. brew install python
+2. Ensure that /usr/local/bin is in the path
+3. pip install virtualenv
+4. Add the following to your RC files
+   # pip should only run if there is a virtualenv currently activated
+   export PIP_REQUIRE_VIRTUALENV=true
+5. mkdir ~/Virtualenvs
+
+#############################################################
+GO
+#############################################################
+
+1. brew install go
+2. Then look at config.fish for exports
