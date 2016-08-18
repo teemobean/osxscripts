@@ -1,10 +1,21 @@
-brew install fish // i did not do this, so this is an experiment
-brew install macvim
-brew install carthage
 
 brew cask install ngrok // ngrok sets up URIs that point to your machine. Used for Slack testing.
 brew cask install dockertoolbox
 brew cask install google-chrome
+
+#############################################################
+Random utilities
+#############################################################
+
+brew install fish // i did not do this, so this is an experiment
+brew install macvim
+brew install tree // CLI visual
+
+#############################################################
+XCode
+#############################################################
+
+brew install carthage
 
 #############################################################
 Atom
@@ -38,7 +49,10 @@ Python
 4. Add the following to your RC files
    # pip should only run if there is a virtualenv currently activated
    export PIP_REQUIRE_VIRTUALENV=true
-5. mkdir ~/Virtualenvs
+5. pip install virtualenvwrapper
+6. export WORKON_HOME=$HOME/Documents/src/python/Virtualenvs
+   export PROJECT_HOME=$HOME/Documents/src/python
+   source /usr/local/bin/virtualenvwrapper.sh
 
 #############################################################
 GO

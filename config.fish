@@ -1,4 +1,4 @@
-set -x GOPATH $GOPATH $HOME/go
+set -x GOPATH $GOPATH $HOME/Documents/src/go
 set -x PATH $PATH $GOPATH/bin
 set -x PATH /usr/local/bin $PATH
 set -x PIP_REQUIRE_VIRTUALENV true
