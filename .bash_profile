@@ -8,8 +8,8 @@ export PATH=$PATH:$GOPATH
 
 # Python stuff
 export PIP_REQUIRE_VIRTUALENV=true
-gpip(){
-   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+gpip() {
+  PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
 export WORKON_HOME=$HOME/Documents/src/python/Virtualenvs
@@ -26,6 +26,7 @@ alias ls="ls -G"
 alias ee=mvim
 alias s=/usr/local/bin/screen
 alias where=which
+alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Prompt
 export PS1="[\[\e[0;31m\]\w\[\e[m\]] $ "
