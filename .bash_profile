@@ -1,9 +1,9 @@
 # paths
-export PATH=/usr/local/bin:$PATH:~/Documents/src/osxscripts.git/scripts
+export PATH=/usr/local/bin:$PATH:~/src/osxscripts.git/scripts
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
 
 # Go stuff
-export GOPATH=$HOME/Documents/src/go
+export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH
 
 # Python stuff
@@ -12,8 +12,8 @@ gpip() {
   PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
-export WORKON_HOME=$HOME/Documents/src/python/Virtualenvs
-export PROJECT_HOME=$HOME/Documents/src/python
+export WORKON_HOME=$HOME/src/python/Virtualenvs
+export PROJECT_HOME=$HOME/src/python
 source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases
