@@ -1,7 +1,13 @@
 
+#############################################################
+UI tools
+#############################################################
+
 brew cask install ngrok // ngrok sets up URIs that point to your machine. Used for Slack testing.
 brew cask install dockertoolbox
 brew cask install google-chrome
+brew cask install iterm2
+brew cask install postman // REST API testing tool
 
 #############################################################
 Random utilities
