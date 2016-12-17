@@ -66,3 +66,9 @@ GO
 
 1. brew install go
 2. Then look at config.fish for exports
+
+#############################################################
+JAVA
+#############################################################
+
+brew install maven
