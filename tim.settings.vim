@@ -8,6 +8,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 call vundle#end()
 
 filetype plugin indent on
