@@ -9,10 +9,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 filetype plugin indent on
+
+let g:airline_theme='solarized'
 
 " Prompts
 let PROMPT="vim: "
@@ -43,10 +47,10 @@ set fdc=1
 set nofoldenable
 
 " Completion
-set completeopt=longest,menuone 
-inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>" 
-inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>" 
-inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>" 
+set completeopt=longest,menuone
+inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
+inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
+inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 
 " don't auto complete on ., .->, etc.
 
@@ -224,7 +228,7 @@ autocmd BufRead,BufNewFile * set fo=ql
 
 " On entering a buffer, change the current directory to the file.
 " I'm using a :CD command rather then BufEnter for now.
-" autocmd BufEnter * execute ":lcd " . expand("%:p:h") 
+" autocmd BufEnter * execute ":lcd " . expand("%:p:h")
 com! CD cd %:p:h
 
 " some options
