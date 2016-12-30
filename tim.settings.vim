@@ -1,9 +1,15 @@
-" Check for variables
-if $PROGRAMFILESDIR == ""
-let ProgramFilesDir = "d:\\depot\\programs"
-else
-let ProgramFilesDir = $PROGRAMFILESDIR
-endif
+" Some global set ups for Vundle and what not
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+
+filetype plugin indent on
 
 " Prompts
 let PROMPT="vim: "
@@ -12,34 +18,8 @@ let PROMPT="vim: "
 nmap <S-Tab> <<
 imap <S-Tab> <C-d>
 
-" grep files.
-let Grep_Path = ProgramFilesDir . '\tools\grep.exe'
-let Fgrep_Path = ProgramFilesDir . '\tools\fgrep.exe'
-let Egrep_Path = ProgramFilesDir . '\tools\egrep.exe'
-let Agrep_Path = ProgramFilesDir . '\tools\grep.exe'
-let Grep_Find_Path = ProgramFilesDir . '\tools\find.exe'
-let Grep_Xargs_Path = ProgramFilesDir . '\tools\xargs.exe'
-let Grep_Default_Filelist = '*.*'
-nnoremap <silent> <F3> :Grep<CR>
-
-" Explorer settings
-let g:explVertical=1
-noremap <silent> <F6> :Sexplore<CR>
-
-" Tag list.
-let Tlist_Ctags_Cmd = ProgramFilesDir . '\vim\ctags'
-let Tlist_WinWidth = 60
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Auto_Open = 0
-noremap <silent> <F4> :Tlist<CR>
-
-" Minibufexplorer
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
-
 " NERDTree
+
 let NERDTreeWinSize = 60
 " Instead, use an autocmd
 " let NERDTreeStartByDefault=1
@@ -73,8 +53,6 @@ let g:OmniCpp_MayCompleteScope = 0
 
 " Diff
 
-" We don't want VI compatibility
-set nocompatible
 
 " This lets us backspace past lines
 set backspace=2
@@ -109,10 +87,6 @@ set hlsearch
 set incsearch
 set showfulltag
 
-" filetype settings
-filetype on
-filetype indent on
-filetype plugin on
 
 " set some line options
 set showbreak=++++
