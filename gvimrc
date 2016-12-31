@@ -3,7 +3,7 @@ source ~/tim.vim
 
 set guifont=Monaco:h12
 
-set columns=120
+set columns=180
 set lines=40
 
 hi Normal guifg=lightgrey guibg=black
