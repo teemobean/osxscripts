@@ -12,6 +12,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'bling/vim-bufferline'
 call vundle#end()
 
 filetype plugin indent on
@@ -132,10 +133,6 @@ vmap _C <Esc>_C
 " Map _U to just have 79 - underlining
 nmap _U o<Esc>I-<Esc>78.0
 vmap _U <Esc>_U
-
-" Map _O to do p4 edit
-nmap _O :! sd edit <C-R>%<CR>:e <C-R>%<CR>
-nmap _I :! tf edit <C-R>%<CR>:e <C-R>%<CR>
 
 " Mapping for switching buffers
 nmap <F6> :previous<CR>
