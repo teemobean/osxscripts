@@ -111,7 +111,6 @@ set number
 
 " auto complete settings
 set cpt=.,b,u,i,]
-set cino=:0(4
 
 " syntax settings
 let c_comment_strings=1
@@ -197,6 +196,7 @@ set path=.,$VIM_FILES_PATH
 set expandtab
 set tabstop=4
 set sw=4
+set cinoptions+=(0,W1s
 
 " Autocmds for nerdtree
 " TODO: This doesn't work for some reason.
@@ -206,8 +206,7 @@ set sw=4
 autocmd BufRead,BufNewFile *.fs,*.fsx,*.fsi,*.ml set mat=2 sm
 
 " Autocmds for C/C++ files.
-autocmd BufRead,BufNewFile *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl set cindent sm mat=2 sw=4
-autocmd FileType c,cpp,java,cs call UseCEndToken()
+autocmd BufRead,BufNewFile *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl set sm mat=2 sw=4
 
 " Autocmds for VB files
 autocmd BufRead,BufNewFile *.vb setlocal filetype=vbnet
