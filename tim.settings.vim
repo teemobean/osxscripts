@@ -9,15 +9,17 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on
 
-let g:airline_theme='solarized'
+let g:airline_theme='molokai'
 
 " Prompts
 let PROMPT="vim: "

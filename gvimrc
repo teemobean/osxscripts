@@ -19,4 +19,4 @@ hi Type guifg=darkgreen
 "set listchars=extends:+,tab:›•,trail:•
 set listchars=extends:+,tab:>-,trail:+
 
-colorscheme solarized
+colorscheme molokai
