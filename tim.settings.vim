@@ -72,26 +72,20 @@ set foldmethod=indent
 set fdc=1
 set nofoldenable
 
+" Tabs and indents
+set expandtab
+set tabstop=4
+set sw=4
+set cinoptions+=(0,W1s
+
 " Completion
 set completeopt=longest,menuone
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
 inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 
-" don't auto complete on ., .->, etc.
-
-let g:OmniCpp_MayCompleteDot = 0
-let g:OmniCpp_MayCompleteArrow = 0
-let g:OmniCpp_MayCompleteScope = 0
-
-" Diff
-
-
 " This lets us backspace past lines
 set backspace=2
-
-" Autoindent is good.
-set ai
 
 set ff=unix
 set ruler
@@ -118,7 +112,6 @@ syntax on
 set hlsearch
 set incsearch
 set showfulltag
-
 
 " set some line options
 set showbreak=++++
@@ -185,18 +178,13 @@ set backupdir=/tmp
 set directory=/tmp
 
 " set the tag search
-set tags=$VIM\doc\tags,$VIM_TAG_FILES,$DEPOTROOT\tags,.\tags
+set tags=$VIM\doc\tags,$VIM_TAG_FILES,.\tags
 
 " set the path to search for include files
 set path=.,$VIM_FILES_PATH
 
 " we want a dark background
 " set background=dark
-
-set expandtab
-set tabstop=4
-set sw=4
-set cinoptions+=(0,W1s
 
 " Autocmds for nerdtree
 " TODO: This doesn't work for some reason.
