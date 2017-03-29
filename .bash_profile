@@ -65,7 +65,7 @@ function proml {
   esac
 
 PS1="${TITLEBAR}\
-$WHITE\W $GREEN\$(display_git)\
+$WHITE[\W] $GREEN\$(display_git)\
 $LIGHT_GRAY\$ "
 PS2='> '
 PS4='+ '
