@@ -28,9 +28,23 @@ alias s=/usr/local/bin/screen
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 
+#$WHITE\W $LIGHT_GRAY\$(git_user_name) $GREEN\$(parse_git_branch)$BLUE\
+
 # Prompt
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+function git_user_name {
+  if [ -n "$(parse_git_branch)" ]; then
+    git config user.name
+  fi
+}
+
+function display_git {
+  if [ -n "$(parse_git_branch)" ]; then
+    echo "$(git_user_name) $(parse_git_branch) "
+  fi
 }
 
 function proml {
@@ -51,7 +65,7 @@ function proml {
   esac
 
 PS1="${TITLEBAR}\
-$WHITE\w $GREEN\$(parse_git_branch)$BLUE\
+$WHITE\W $GREEN\$(display_git)\
 $LIGHT_GRAY\$ "
 PS2='> '
 PS4='+ '

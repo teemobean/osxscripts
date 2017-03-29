@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 
 filetype plugin indent on
@@ -35,6 +36,9 @@ nmap <Leader>f <Plug>(easymotion-overwin-f2)
 
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
+
+" Spacing delimeter
+let g:NERDSpaceDelims = 1
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
