@@ -28,6 +28,11 @@ alias s=/usr/local/bin/screen
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 
+# You must ru both of these to get the photos and video dates to match
+alias fdp="~/Downloads/Image-ExifTool-10.47/exiftool '-MDItemFSCreationDate<CreateDate' '-filemodifydate<CreateDate'"
+alias fdv="~/Downloads/Image-ExifTool-10.47/exiftool '-MDItemFSCreationDate<CreationDate' '-filemodifydate<CreationDate'"
+alias ddp="~/Downloads/Image-ExifTool-10.47/exiftool -time:all -a -G0:1 -s"
+
 #$WHITE\W $LIGHT_GRAY\$(git_user_name) $GREEN\$(parse_git_branch)$BLUE\
 
 # Prompt
