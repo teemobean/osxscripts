@@ -1,0 +1,3 @@
+#!/bin/bash
+eval $(docker-machine env main)
+docker run -p 0.0.0.0:7007:6006 -it gcr.io/tensorflow/tensorflow bash
