@@ -1,20 +1,19 @@
 # paths
-export PATH=/usr/local/bin:$PATH:~/src/osxscripts.git/scripts
-export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
+export PATH=/usr/local/bin:$PATH:~/src/osx/osxscripts.git/scripts
+export EDITOR='mvim -f --nomru'
 
 # Go stuff
-export GOPATH=$HOME/src/go
-export PATH=$PATH:$GOPATH
+# export GOPATH=$HOME/src/go
+# export PATH=$PATH:$GOPATH
 
 # Python stuff
-export PIP_REQUIRE_VIRTUALENV=true
-gpip() {
-  PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
-
-export WORKON_HOME=$HOME/src/python/Virtualenvs
-export PROJECT_HOME=$HOME/src/python
-source /usr/local/bin/virtualenvwrapper.sh
+# export PIP_REQUIRE_VIRTUALENV=true
+# gpip() {
+#   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+# }
+# export WORKON_HOME=$HOME/src/python/Virtualenvs
+# export PROJECT_HOME=$HOME/src/python
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases
 alias u="cd .."
@@ -24,7 +23,6 @@ alias ll="ls -lG"
 alias lsa="ls -aG"
 alias ls="ls -G"
 alias ee=mvim
-alias s=/usr/local/bin/screen
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 
