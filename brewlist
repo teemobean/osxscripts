@@ -16,7 +16,6 @@ Random utilities
 brew install fish // i did not do this, so this is an experiment
 brew install macvim
 brew install tree // CLI visual
-brew install zsh
 brew install wsta - websocket like curl
 
 #############################################################
@@ -26,6 +25,7 @@ ZSH
 brew install zsh
 Install oh my zsh
 https://github.com/caiogondim/bullet-train.zsh
+https://github.com/mroth/git-prompt-useremail
 
 #############################################################
 XCode
