@@ -22,9 +22,13 @@ alias d="ls -lG"
 alias ll="ls -lG"
 alias lsa="ls -aG"
 alias ls="ls -G"
+alias e=vim
 alias ee=mvim
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
+
+# builds
+alias gsj="./gradlew clean build shadowJar"
 
 # You must ru both of these to get the photos and video dates to match
 alias fdp="~/Downloads/Image-ExifTool-10.47/exiftool '-MDItemFSCreationDate<CreateDate' '-filemodifydate<CreateDate'"
@@ -60,7 +64,7 @@ function proml {
   local  LIGHT_GRAY="\[\033[0;37m\]"
   case $TERM in
     xterm*)
-    TITLEBAR='\[\033]0;\u@\h:\w\007\]'
+    TITLEBAR='🔥  \[\033]0;\u@\h:\w\007\]'
     ;;
     *)
     TITLEBAR=""

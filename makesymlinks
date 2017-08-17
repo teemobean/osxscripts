@@ -14,3 +14,6 @@ ln -f -s ~/src/osx/osxscripts.git/tim.utils.vim ~/tim.utils.vim
 
 # Bash
 ln -f -s ~/src/osx/osxscripts.git/.bash_profile ~/.bash_profile
+
+# ZSH
+ln -f -s ~/src/osx/osxscripts.git/.zshrc ~/.zshrc

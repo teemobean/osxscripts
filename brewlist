@@ -20,6 +20,14 @@ brew install zsh
 brew install wsta - websocket like curl
 
 #############################################################
+ZSH
+#############################################################
+
+brew install zsh
+Install oh my zsh
+https://github.com/caiogondim/bullet-train.zsh
+
+#############################################################
 XCode
 #############################################################
 
