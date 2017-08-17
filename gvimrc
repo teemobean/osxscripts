@@ -1,7 +1,7 @@
 " load common file
 source ~/tim.vim
 
-set background=light
+set background=dark
 set guifont=Inconsolata:h13
 
 set columns=180
