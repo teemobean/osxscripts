@@ -187,9 +187,6 @@ set tags=$VIM\doc\tags,$VIM_TAG_FILES,.\tags
 " set the path to search for include files
 set path=.,$VIM_FILES_PATH
 
-" we want a dark background
-" set background=dark
-
 " Autocmds for nerdtree
 " TODO: This doesn't work for some reason.
 "autocmd BufRead *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl,*.vb,*.rb,*.erb,*.css,*.html,*.xml,*.vim,*.asp,*.aspx execute ":NERDTreeToggle"

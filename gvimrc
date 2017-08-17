@@ -1,7 +1,8 @@
 " load common file
 source ~/tim.vim
 
-set guifont=Monaco:h12
+set background=light
+set guifont=Inconsolata:h13
 
 set columns=180
 set lines=40
@@ -19,4 +20,4 @@ hi Type guifg=darkgreen
 "set listchars=extends:+,tab:›•,trail:•
 set listchars=extends:+,tab:>-,trail:+
 
-colorscheme molokai
+colorscheme solarized
