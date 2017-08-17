@@ -17,6 +17,8 @@ brew install fish // i did not do this, so this is an experiment
 brew install macvim
 brew install tree // CLI visual
 brew install wsta - websocket like curl
+brew install the_silver_searcher - code search (grep like)
+brew install stoken - for RSA token keys
 
 #############################################################
 ZSH
