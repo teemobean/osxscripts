@@ -1,1 +1,1 @@
-/Users/tim/Documents/src/osx/osxscripts.git/.vim
+/Users/tim/src/osx/osxscripts.git/.vim
