@@ -111,3 +111,10 @@ alias st="stoken | tail -n 1 | tr -d '\n' | pbcopy"
 
 # builds
 alias gsj="./gradlew clean build shadowJar"
+
+# git
+alias ffm="git merge --ff-only upstream/master"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

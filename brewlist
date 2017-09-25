@@ -19,6 +19,7 @@ brew install tree // CLI visual
 brew install wsta - websocket like curl
 brew install the_silver_searcher - code search (grep like)
 brew install stoken - for RSA token keys
+brew install jq - for pretty printing and listing json
 
 #############################################################
 ZSH
