@@ -55,7 +55,7 @@ imap <S-Tab> <C-d>
 
 let NERDTreeWinSize=60
 let NERDTreeQuitOnOpen=1
-noremap <silent> <F5> :set columns=180<CR>:NERDTreeToggle<CR>
+noremap <silent> <Leader>t :set columns=180<CR>:NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
