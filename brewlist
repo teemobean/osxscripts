@@ -22,6 +22,7 @@ brew install stoken - for RSA token keys
 brew install jq - for pretty printing and listing json
 brew install ag - file content search
 brew install fzf - fuzzy file search
+brew install jenv - java HOME manager
 
 #############################################################
 ZSH
@@ -87,3 +88,11 @@ JAVA
 #############################################################
 
 brew install maven
+
+#############################################################
+System stuff
+#############################################################
+
+# Make the sound control work for HDMI devices
+brew cask install soundflower
+brew cask install soundflowerbed
