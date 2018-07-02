@@ -1,8 +1,11 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=$runtimepath
+
 " load common file
 source ~/tim.vim
 
 set background=dark
-set guifont=Inconsolata:h13
+"set guifont=Inconsolata:h13
 
 set columns=180
 set lines=40
@@ -20,4 +23,5 @@ hi Type guifg=darkgreen
 "set listchars=extends:+,tab:›•,trail:•
 set listchars=extends:+,tab:>-,trail:+
 
-colorscheme solarized
+set termguicolors
+colorscheme NeoSolarized

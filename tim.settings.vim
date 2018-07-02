@@ -6,8 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
@@ -53,14 +53,14 @@ imap <S-Tab> <C-d>
 
 " NERDTree
 
-let NERDTreeWinSize=60
-let NERDTreeQuitOnOpen=1
-noremap <silent> <Leader>t :set columns=180<CR>:NERDTreeToggle<CR>
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-autocmd BufEnter * wincmd p
+"let NERDTreeWinSize=60
+"let NERDTreeQuitOnOpen=1
+"noremap <silent> <Leader>t :set columns=180<CR>:NERDTreeToggle<CR>
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+"autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd BufEnter * wincmd p
 
 " Comments
 let g:EnhCommentifyPretty = 'Yes'
@@ -211,7 +211,7 @@ autocmd BufRead,BufNewFile *.html set sw=2 tabstop=2
 autocmd BufRead,BufNewFile *.css set sw=2 tabstop=2
 
 " Autocmds for JS
-autocmd BufRead,BufNewFile *.js set sw=4 tabstop=4
+autocmd BufRead,BufNewFile *.js set sw=2 tabstop=2
 
 " Autocmds for asp/aspx
 autocmd BufRead,BufNewFile *.asp,*.aspx set sw=4 tabstop=4

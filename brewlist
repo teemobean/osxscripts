@@ -75,6 +75,8 @@ Python
    export PROJECT_HOME=$HOME/Documents/src/python
    source /usr/local/bin/virtualenvwrapper.sh
 
+brew install pycharm-ce
+
 #############################################################
 GO
 #############################################################

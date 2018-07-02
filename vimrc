@@ -1,8 +1,6 @@
 " load common file
 source ~/tim.vim
 
-set guifont=Monaco:h12
-
 " set columns
 "set lines=65
 
@@ -20,4 +18,5 @@ hi Type guifg=darkgreen
 set listchars=extends:+,tab:>-,trail:+
 
 let molokai_original = 1
-colorscheme molokai
+set background=dark
+colorscheme solarized

@@ -23,7 +23,7 @@ alias ll="ls -lG"
 alias lsa="ls -aG"
 alias ls="ls -G"
 alias e=vim
-alias ee=mvim
+alias ee=vimr
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 
