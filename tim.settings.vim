@@ -17,6 +17,7 @@ Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'DrawIt'
 call vundle#end()
 
 filetype plugin indent on
