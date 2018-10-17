@@ -24,3 +24,4 @@ ln -f -s ~/src/osx/osxscripts.git/.bash_profile ~/.bash_profile
 ln -f -s ~/src/osx/osxscripts.git/.zshrc ~/.zshrc
 mkdir ~/.oh-my-zsh/custom/themes
 ln -f -s ~/src/osx/osxscripts.git/zsh-themes/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
+ln -f -s ~/src/osx/osxscripts.git/zsh-themes/powerline.zsh-theme ~/.oh-my-zsh/custom/themes/powerline.zsh-theme
