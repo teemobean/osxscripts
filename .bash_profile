@@ -26,6 +26,7 @@ alias e=vim
 alias ee=vimr
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
+alias vpn="stoken | tr -d ''\n'' | pbcopy; scutil --nc start GoDaddy --user tng"
 
 # builds
 alias gsj="./gradlew clean build shadowJar"
