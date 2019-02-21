@@ -7,7 +7,7 @@ export ZSH=/Users/tim/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerline"
+# ZSH_THEME="powerline"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -116,9 +116,12 @@ alias gsj="./gradlew clean build shadowJar"
 alias ffm="git merge --ff-only upstream/master"
 
 # GoDaddy
-alias vpn="scutil --nc start GoDaddy --user jswenson; stoken | tr -d '\n' | pbcopy"
+alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
 alias otp='~/src/osx/osxscript.git/apps/otpcli okta -n; otpcli okta | pbcopy'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
