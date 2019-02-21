@@ -124,7 +124,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Ruby
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_BATTERY_CHARGING='yellow'
@@ -133,5 +133,6 @@ POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
 POWERLEVEL9K_BATTERY_LOW_THRESHOLD='10'
 POWERLEVEL9K_BATTERY_LOW_COLOR='red'
 POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs newline os_icon user)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs newline os_icon user time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
