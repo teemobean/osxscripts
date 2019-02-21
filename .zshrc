@@ -135,4 +135,5 @@ POWERLEVEL9K_BATTERY_LOW_COLOR='red'
 POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs newline os_icon user time)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
