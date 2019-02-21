@@ -123,6 +123,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Ruby
+eval "$(rbenv init -)"
+
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_BATTERY_CHARGING='yellow'
 POWERLEVEL9K_BATTERY_CHARGED='green'
