@@ -108,6 +108,7 @@ alias ee=vimr
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias st="stoken | tail -n 1 | tr -d '\n' | pbcopy"
+alias cd-=popd
 
 # builds
 alias gsj="./gradlew clean build shadowJar"
