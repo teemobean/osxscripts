@@ -1,3 +1,6 @@
+git clone https://github.com/teemobean/powerlevel9k.git ~/src/osx/powerlevel9k.git
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
 
 #############################################################
 UI tools
