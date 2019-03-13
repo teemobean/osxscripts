@@ -19,4 +19,4 @@ set listchars=extends:+,tab:>-,trail:+
 
 let molokai_original = 1
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
