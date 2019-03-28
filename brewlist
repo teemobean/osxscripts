@@ -101,9 +101,16 @@ RUBY
 brew install rbenv
 
 #############################################################
+RUST
+#############################################################
+
+brew install rustup-init
+
+#############################################################
 System stuff
 #############################################################
 
 # Make the sound control work for HDMI devices
 brew cask install soundflower
 brew cask install soundflowerbed
+
