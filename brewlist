@@ -11,6 +11,7 @@ brew cask install dockertoolbox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install postman // REST API testing tool
+brew cask install azure-data-studio
 
 #############################################################
 Random utilities
