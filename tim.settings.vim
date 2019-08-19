@@ -4,6 +4,8 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
+let g:airline_theme='molokai'
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'scrooloose/nerdtree'
@@ -12,18 +14,17 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'DrawIt'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 
 filetype plugin indent on
-
-let g:airline_theme='molokai'
 
 " Easy motion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings

@@ -24,4 +24,4 @@ hi Type guifg=darkgreen
 set listchars=extends:+,tab:>-,trail:+
 
 set termguicolors
-colorscheme NeoSolarized
+colorscheme gruvbox
