@@ -23,6 +23,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'DrawIt'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 filetype plugin indent on
@@ -188,8 +191,19 @@ set directory=/tmp
 " set the tag search
 set tags=$VIM\doc\tags,$VIM_TAG_FILES,.\tags
 
+" EasyTags
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1
+nmap <silent> <leader>b :TagbarToggle<CR>
+
 " set the path to search for include files
 set path=.,$VIM_FILES_PATH
+
+" set wildignore
+set wildignore+=*.class
 
 " Autocmds for nerdtree
 " TODO: This doesn't work for some reason.
