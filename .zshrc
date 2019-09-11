@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export TERM="xterm-256color"
 export ZSH=/Users/tim/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -137,7 +138,7 @@ POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
 POWERLEVEL9K_BATTERY_LOW_THRESHOLD='10'
 POWERLEVEL9K_BATTERY_LOW_COLOR='red'
 POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs virtualenv newline os_icon user)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs virtualenv nvm newline os_icon user)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
