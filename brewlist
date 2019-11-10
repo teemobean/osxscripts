@@ -1,6 +1,7 @@
 git clone https://github.com/teemobean/powerlevel9k.git ~/src/osx/powerlevel9k.git
-brew tap caskroom/fonts
+brew tap caskroom/cask-fonts
 brew cask install font-hack-nerd-font
+Make sure that in iterm you set a different font for non-ascii fonts and make that hack nerd.
 
 #############################################################
 UI tools
