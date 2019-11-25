@@ -99,6 +99,8 @@ prompt_context() {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=/usr/local/bin:$PATH:~/src/osx/osxscripts.git/scripts
+export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/$(ruby -v | cut -f 2 -d ' ' | cut -d '.' -f 1-2).0/bin:$PATH"
 export EDITOR='mvim -f --nomru'
 
 # aliases
