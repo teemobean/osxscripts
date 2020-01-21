@@ -19,6 +19,7 @@ Random utilities
 #############################################################
 
 brew install fish // i did not do this, so this is an experiment
+brew install diff-so-fancy
 brew install macvim
 brew install tree // CLI visual
 brew install wsta - websocket like curl
