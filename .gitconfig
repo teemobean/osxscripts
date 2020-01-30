@@ -6,3 +6,9 @@
   editor = vim
   excludesfile = ~/.config/git/gitignore
   pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+  co = checkout
+  cob = checkout -b
+  cm = commit -m
+  bv = branch -vv
+

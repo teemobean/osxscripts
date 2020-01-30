@@ -5,7 +5,7 @@ let &packpath=$runtimepath
 source ~/tim.vim
 
 set background=dark
-"set guifont=Inconsolata:h13
+set guifont=Roboto_Mono_Light_for_Powerline:h12
 
 set columns=180
 set lines=40
