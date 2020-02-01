@@ -118,10 +118,12 @@ alias st="stoken | tail -n 1 | tr -d '\n' | pbcopy"
 alias cd-=popd
 
 # builds
-alias gsj="./gradlew clean build shadowJar"
+alias jb="./gradlew clean build shadowJar"
 
 # git
-alias ffm="git merge --ff-only upstream/master"
+alias c="git checkout"
+alias gr="git rebase master"
+alias com="git commit -m "
 
 # GoDaddy
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
