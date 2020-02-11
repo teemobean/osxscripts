@@ -124,6 +124,7 @@ alias jb="./gradlew clean build shadowJar"
 alias c="git checkout"
 alias cb="git checkout -b"
 alias p="git pull"
+alias pu="git push"
 alias rm="git rebase master"
 alias cm="git commit -m "
 
