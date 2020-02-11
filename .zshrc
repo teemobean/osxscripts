@@ -122,8 +122,10 @@ alias jb="./gradlew clean build shadowJar"
 
 # git
 alias c="git checkout"
-alias gr="git rebase master"
-alias com="git commit -m "
+alias cb="git checkout -b"
+alias p="git pull"
+alias rm="git rebase master"
+alias cm="git commit -m "
 
 # GoDaddy
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
