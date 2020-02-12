@@ -125,8 +125,10 @@ alias c="git checkout"
 alias cb="git checkout -b"
 alias p="git pull"
 alias pu="git push"
+alias pup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
 alias rm="git rebase master"
 alias cm="git commit -m "
+alias bvv="git branch -vv"
 
 # GoDaddy
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
