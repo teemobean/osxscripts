@@ -123,9 +123,9 @@ alias jb="./gradlew clean build shadowJar"
 # git
 alias c="git checkout"
 alias cb="git checkout -b"
-alias p="git pull"
-alias pu="git push"
-alias pup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
+alias pull="git pull"
+alias push="git push"
+alias pushup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
 alias rm="git rebase master"
 alias cm="git commit -m "
 alias bvv="git branch -vv"
