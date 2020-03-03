@@ -12,5 +12,5 @@
   cm = commit -m
   bv = branch -vv
 
-[url "ssh://git@github.securesever.net/"]
-	insteadOf = https://github.secureserver.net/
+# [url "ssh://git@github.securesever.net/"]
+# 	insteadOf = https://github.secureserver.net/

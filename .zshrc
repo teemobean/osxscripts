@@ -126,7 +126,7 @@ alias cb="git checkout -b"
 alias pull="git pull"
 alias push="git push"
 alias pushup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
-alias rm="git rebase master"
+alias rebase="git rebase master"
 alias cm="git commit -m "
 alias bvv="git branch -vv"
 
