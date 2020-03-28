@@ -1,6 +1,6 @@
 [user]
-  name = tng@godaddy.com
-  email = tng@godaddy.com
+	name = teemobean@gmail.com
+	email = teemobean@gmail.com
 [core]
   autocrlf = false
   editor = vim
@@ -14,3 +14,5 @@
 
 # [url "ssh://git@github.securesever.net/"]
 # 	insteadOf = https://github.secureserver.net/
+[pull]
+	rebase = true
