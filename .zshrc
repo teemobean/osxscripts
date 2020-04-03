@@ -101,6 +101,7 @@ prompt_context() {
 export PATH=/usr/local/bin:$PATH:~/src/osx/osxscripts.git/scripts
 export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/$(ruby -v | cut -f 2 -d ' ' | cut -d '.' -f 1-2).0/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR='mvim -f --nomru'
 
 # aliases
@@ -132,7 +133,7 @@ alias bvv="git branch -vv"
 
 # GoDaddy
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
-alias otp='~/src/osx/osxscript.git/apps/otpcli okta -n; otpcli okta | pbcopy'
+alias otp="otpcli generate gd | pbcopy"
 
 export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
