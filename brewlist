@@ -15,6 +15,13 @@ brew cask install postman // REST API testing tool
 brew cask install azure-data-studio
 
 #############################################################
+OTP CLI
+#############################################################
+brew install rust
+cargo install otpcli
+otpcli add gd <secret>
+
+#############################################################
 Random utilities
 #############################################################
 
