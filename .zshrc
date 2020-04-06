@@ -130,6 +130,7 @@ alias pushup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
 alias rebase="git rebase master"
 alias cm="git commit -m "
 alias bvv="git branch -vv"
+alias add="git add"
 
 # GoDaddy
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
