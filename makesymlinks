@@ -17,6 +17,7 @@ ln -f -s ~/src/osx/osxscripts.git/tim.vim ~/tim.vim
 ln -f -s ~/src/osx/osxscripts.git/tim.settings.vim ~/tim.settings.vim
 ln -f -s ~/src/osx/osxscripts.git/tim.utils.vim ~/tim.utils.vim
 ln -f -s ~/src/osx/osxscripts.git/.gitconfig ~/.gitconfig
+ln -f -s ~/src/osx/osxscripts.git/.xvimrc ~/.xvimrc
 
 # Bash
 ln -f -s ~/src/osx/osxscripts.git/.bash_profile ~/.bash_profile
