@@ -36,6 +36,7 @@ brew install jq - for pretty printing and listing json
 brew install ag - file content search
 brew install fzf - fuzzy file search
 brew install jenv - java HOME manager
+brew install bat - a better cat
 
 #############################################################
 ZSH
