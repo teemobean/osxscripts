@@ -106,11 +106,8 @@ export EDITOR='mvim -f --nomru'
 
 # aliases
 alias u="cd .."
-alias l="ls -lG"
 alias d="ls -lG"
-alias ll="ls -lG"
-alias lsa="ls -aG"
-alias ls="ls -G"
+alias da="ls -alG"
 alias e=vim
 alias ee=mvim
 alias where=which
