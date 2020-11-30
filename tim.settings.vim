@@ -230,6 +230,7 @@ autocmd BufRead,BufNewFile *.css set sw=2 tabstop=2
 
 " Autocmds for JS
 autocmd BufRead,BufNewFile *.js set sw=2 tabstop=2
+autocmd BufRead,BufNewFile *.json set sw=2 tabstop=2
 
 " Autocmds for asp/aspx
 autocmd BufRead,BufNewFile *.asp,*.aspx set sw=4 tabstop=4
