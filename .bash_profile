@@ -83,3 +83,5 @@ PROMPT_COMMAND=proml
 
 export NVM_DIR="/Users/tim/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.cargo/bin:$PATH"
