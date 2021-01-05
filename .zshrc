@@ -110,6 +110,7 @@ alias d="ls -lG"
 alias da="ls -alG"
 alias e=vim
 alias ee=mvim
+alias eee=/Applications/Neovide.app/Contents/MacOS/neovide
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias st="stoken | tail -n 1 | tr -d '\n' | pbcopy"
