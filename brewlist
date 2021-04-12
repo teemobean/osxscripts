@@ -9,10 +9,9 @@ UI tools
 
 brew cask install ngrok // ngrok sets up URIs that point to your machine. Used for Slack testing.
 brew cask install dockertoolbox
-brew cask install google-chrome
 brew cask install iterm2
-brew cask install postman // REST API testing tool
-brew cask install azure-data-studio
+brew cask install hiddenbar // menu bar managing
+brew cask install fork
 
 #############################################################
 OTP CLI
@@ -37,6 +36,7 @@ brew install ag - file content search
 brew install fzf - fuzzy file search
 brew install jenv - java HOME manager
 brew install bat - a better cat
+brew install zoxide - a better cd
 
 #############################################################
 ZSH

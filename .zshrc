@@ -153,3 +153,5 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir vcs virtualenv nodeenv newline os
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
+
+eval "$(zoxide init zsh)"
