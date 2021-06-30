@@ -123,8 +123,8 @@ alias jb="./gradlew clean build shadowJar"
 alias c="git checkout"
 alias cb="git checkout -b"
 alias pull="git pull"
-alias push="git push"
-alias pushup='git push --set-upstream tng $(git symbolic-ref --short HEAD)'
+alias p="git push"
+alias pu='(){ git push --set-upstream $1 $(git symbolic-ref --short HEAD); }'
 alias rebase="git rebase master"
 alias cm="git commit -m "
 alias bvv="git branch -vv"
@@ -134,9 +134,8 @@ alias add="git add"
 alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
 alias otp="otpcli generate gd | pbcopy"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Ruby
 # eval "$(rbenv init -)"
