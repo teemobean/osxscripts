@@ -1,6 +1,6 @@
 [user]
-	name = teemobean@gmail.com
-	email = teemobean@gmail.com
+	name = timngmsft
+	email = timngmsft@hotmail.com
 [core]
   autocrlf = false
   editor = vim
@@ -16,3 +16,8 @@
 # 	insteadOf = https://github.secureserver.net/
 [pull]
 	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

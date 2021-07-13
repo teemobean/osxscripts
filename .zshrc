@@ -154,3 +154,6 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
 
 eval "$(zoxide init zsh)"
+
+# Secretive Config
+export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
