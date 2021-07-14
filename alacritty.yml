@@ -431,16 +431,16 @@ key_bindings:
   - key: Right
     mods: Command
     chars: "\x02n" # ctrl-b n
-  - key: K
+  - key: H
     mods: Command|Shift
     chars: "\x02p" # ctrl-b p
-  - key: J
+  - key: L
     mods: Command|Shift
     chars: "\x02n" # ctrl-b n
-  - key: J
+  - key: L
     mods: Command
     chars: "\x02n" # ctrl-b n
-  - key: K
+  - key: H
     mods: Command
     chars: "\x02p" # ctrl-b p
   - key: B
