@@ -34,4 +34,7 @@ ln -f -s ~/src/osx/osxscripts.git/.ssh/config ~/.ssh
 
 # Alacritty
 mkdir ~/.config/alacritty
-ln -f -s ~/.config/alacritty/alacritty.yml
+ln -f -s ~/src/osx/osxscripts.git/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+# tmux
+ln -f -s ~/src/osx/osxscripts.git/.tmux.conf ~
