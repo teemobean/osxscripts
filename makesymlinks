@@ -31,3 +31,7 @@ ln -f -s ~/src/osx/osxscripts.git/zsh-themes/powerline.zsh-theme ~/.oh-my-zsh/cu
 # SSH
 mkdir ~/.ssh
 ln -f -s ~/src/osx/osxscripts.git/.ssh/config ~/.ssh
+
+# Alacritty
+mkdir ~/.config/alacritty
+ln -f -s ~/.config/alacritty/alacritty.yml

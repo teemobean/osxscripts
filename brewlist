@@ -47,6 +47,8 @@ Install oh my zsh
 https://github.com/caiogondim/bullet-train.zsh
 https://github.com/mroth/git-prompt-useremail
 
+brew install starship
+
 #############################################################
 XCode
 #############################################################
