@@ -108,12 +108,10 @@ export EDITOR='mvim -f --nomru'
 alias u="cd .."
 alias d="ls -lG"
 alias da="ls -alG"
-alias e=vim
-alias ee=mvim
-alias eee=/Applications/Neovide.app/Contents/MacOS/neovide
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias st="stoken | tail -n 1 | tr -d '\n' | pbcopy"
+alias cd=z
 alias cd-=popd
 
 # builds
@@ -129,10 +127,6 @@ alias rebase="git rebase master"
 alias cm="git commit -m "
 alias bvv="git branch -vv"
 alias add="git add"
-
-# GoDaddy
-alias vpn="scutil --nc start GoDaddy --user tng; stoken | tr -d '\n' | pbcopy"
-alias otp="otpcli generate gd | pbcopy"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -155,6 +149,23 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+function _vim {
+    if chezmoi source-path "$1" 2>/dev/null; then
+        chezmoi edit "$1"
+    else
+        vim "$1"
+    fi
+}
+function _mvim {
+    if chezmoi source-path "$1" 2>/dev/null; then
+        chezmoi edit "$1"
+    else
+        mvim "$1"
+    fi
+}
+alias e=_vim
+alias ee=_mvim
 
 # Secretive Config
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
