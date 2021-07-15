@@ -475,11 +475,11 @@ key_bindings:
   - { key: Equals, mods: Command, action: IncreaseFontSize }
   - { key: Plus, mods: Command, action: IncreaseFontSize }
   - { key: Minus, mods: Command, action: DecreaseFontSize }
-  - { key: L, mods: Command, action: ClearHistory }
-  - { key: L, mods: Command, chars: "\f" }
+  #- { key: L, mods: Command, action: ClearHistory }
+  #- { key: L, mods: Command, chars: "\f" }
   - { key: V, mods: Command, action: Paste }
   - { key: C, mods: Command, action: Copy }
-  - { key: H, mods: Command, action: Hide }
+  #- { key: H, mods: Command, action: Hide }
   - { key: M, mods: Command, action: Minimize }
   - { key: Q, mods: Command, action: Quit }
   # - { key: W,      mods: Command,         action: Quit             }
